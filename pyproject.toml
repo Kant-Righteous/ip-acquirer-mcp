@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ip-acquirer-mcp"
+version = "0.1.1"
+authors = [
+  { name="Zhengyi Chen", email="adamchenfr@gmail.com" },
+]
+description = "一个通过 MCP 协议获取本机详细内网IP信息和公网IP的工具"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "psutil",
+    "requests",
+    "mcp"
+]
+
+[project.scripts]
+ip-acquirer = "ip_acquirer_mcp:main"
