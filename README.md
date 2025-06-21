@@ -1,5 +1,7 @@
 # IP Acquirer MCP
 
+[![smithery badge](https://smithery.ai/badge/@Kant-Righteous/ip-acquirer-mcp)](https://smithery.ai/server/@Kant-Righteous/ip-acquirer-mcp)
+
 一个通过 MCP 协议获取本机详细内网IP信息和公网IP的工具。
 
 ## 功能
@@ -12,6 +14,15 @@
 
 ## 安装
 
+### Installing via Smithery
+
+To install IP Acquirer for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Kant-Righteous/ip-acquirer-mcp):
+
+```bash
+npx -y @smithery/cli install @Kant-Righteous/ip-acquirer-mcp --client claude
+```
+
+### Manual Installation
 您可以从 PyPI 安装此工具：
 
 ```bash
@@ -42,3 +53,4 @@ ip-acquirer
 2.  创建虚拟环境: `python -m venv .venv`
 3.  激活虚拟环境
 4.  安装依赖: `pip install -e .`
+
